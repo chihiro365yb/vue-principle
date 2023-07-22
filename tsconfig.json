@@ -19,12 +19,14 @@
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
 
-        "baseUrl": "./",
+        "baseUrl": ".",
         "paths": {
-            "/@/*": ["src/*"],
-            "/#/*": ["types/*"]
-        }
+            "@/*": ["src/*"],
+            "#/*": ["types/*"]
+        },
+
+        "types": ["element-plus/global"]
     },
-    "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+    "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.js"],
     "references": [{ "path": "./tsconfig.node.json" }]
 }
